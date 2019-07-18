@@ -1,0 +1,278 @@
+@import "common/var.css";
+
+@b zmz-menu {
+
+	/*-----------------------
+		 * horizontal
+		 *-----------------------*/
+	@m horizontal {
+		border-bottom: solid 1px #e6e6e6;
+		list-style: none;
+		position: relative;
+		margin: 0;
+		padding-left: 0;
+		background-color: #fff;
+
+		.zmz-menu-item {
+			position: relative;
+			color: #6e8aaf;
+			float: left;
+			padding: 0 25px;
+			height: 60px;
+			line-height: 60px;
+			cursor: pointer;
+
+			&.is-disabled {
+				cursor: not-allowed;
+				color: #828282;
+				background: none !important;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				outline: none;
+			}
+
+			.zmz-submenu_right {
+				left: 210px;
+				top: 0;
+			}
+
+			.zmz-submenu_left {
+				left: -210px;
+				top: 0;
+			}
+
+			.zmz-submenu_bottom {
+				left: 0;
+			}
+		}
+
+		.zmz-submenu {
+			background: #fff;
+			position: relative;
+			left: 0;
+			box-shadow: 0 10px 60px 0 rgba(29, 29, 31, 0.07);
+
+			.zmz-menu-item {
+				display: block;
+				height: 40px;
+				padding: 0 10px;
+				line-height: 40px;
+				float: none;
+			}
+
+			.zmz-menu-group {
+				.zmz-menu-group_title {
+					color: #d0d0d0;
+					font-size: 14px;
+					padding: 10px;
+					line-height: 1;
+				}
+			}
+
+			::after {
+				clear: both;
+				display: block;
+				overflow: hidden;
+				content: '';
+			}
+		}
+
+		>.zmz-submenu>.submenu-content {
+			margin-top: 10px;
+		}
+
+		&::after {
+			content: "";
+			clear: both;
+			overflow: hidden;
+			display: block;
+		}
+
+		.zmz-submenu {
+			position: relative;
+			color: #6e8aaf;
+			float: left;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				outline: none;
+			}
+
+			.submenu-title {
+				padding: 0 25px;
+				outline: none;
+				height: 60px;
+				line-height: 60px;
+
+				&:hover {
+					outline: none;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.submenu-content {
+				min-width: 200px;
+				position: absolute;
+				left: 0;
+				border-radius: 3px;
+				padding: 5px 0;
+
+				.zmz-submenu {
+					display: block;
+					float: none;
+				}
+
+				.submenu-title {
+					padding: 0 10px;
+					outline: none;
+					height: 40px;
+					line-height: 40px;
+				}
+
+				.submenu-left {
+					left: -210px;
+					top: 0;
+				}
+
+				.submenu-bottom {
+					left: 0;
+				}
+
+				.submenu-right {
+					left: 210px;
+					top: 0;
+				}
+			}
+		}
+	}
+
+	/*-----------------------
+		 * vertical
+		 *-----------------------*/
+	@m vertical {
+		border-bottom: solid 1px #e6e6e6;
+		list-style: none;
+		position: relative;
+		margin: 0;
+		padding-left: 0;
+		background-color: #fff;
+
+		.zmz-menu-item {
+			position: relative;
+			color: #6e8aaf;
+			display: block;
+			padding: 0 25px;
+			cursor: pointer;
+			height: 60px;
+			line-height: 60px;
+
+			&.is-disabled {
+				cursor: not-allowed;
+				color: #828282;
+				background: none !important;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				outline: none;
+			}
+		}
+
+		&::after {
+			content: "";
+			clear: both;
+			overflow: hidden;
+			display: block;
+		}
+
+		.zmz-submenu {
+			background: #fff;
+			position: relative;
+			left: 0;
+			box-shadow: 0 10px 60px 0 rgba(29, 29, 31, 0.07);
+			color: #6e8aaf;
+			display: block;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				outline: none;
+			}
+
+			.submenu-title {
+				padding: 0 25px;
+				height: 60px;
+				line-height: 60px;
+				outline: none;
+
+				&:hover {
+					outline: none;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.submenu-content {
+				.zmz-submenu {
+					display: block;
+					float: none;
+				}
+				.submenu-title {
+					padding: 0 10px;
+					line-height: 40px;
+					height: 40px;
+					outline: none;
+				}
+				.zmz-menu-item {
+					display: block;
+					padding: 0 10px;
+					line-height: 40px;
+					height: 40px;
+					float: none;
+				}
+			}
+
+			.zmz-menu-item {
+				display: block;
+				padding: 0 10px;
+				float: none;
+			}
+
+			.zmz-menu-group {
+				.zmz-menu-group_title {
+					color: #d0d0d0;
+					font-size: 14px;
+					padding: 10px;
+					line-height: 1;
+				}
+			}
+
+			::after {
+				clear: both;
+				display: block;
+				overflow: hidden;
+				content: '';
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+@import "common/var.css";
+
+@b zmz{
+	@e nav {
+		display: inline-block;
+		line-height: 1;
+		white-space: nowrap;
+		cursor: pointer;
+		background: var(--color-white);
+		color: var(--nav-color-text);
+		-webkit-appearance: none;
+		text-align: center;
+		box-sizing: border-box;
+		outline: none;
+		margin: 0;
+		font-size: 14px;
+		transition: 0.1s;
+		font-weight: 500;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+
+		@m horizontal{
+			& ul{
+				& li{
+					color: #000000;
+					float: left;
+					padding: 12px 20px;
+				}
+			}
+		}
+		@m size-small {
+			padding: 9px 15px;
+			font-size: 12px;
+			border-radius: 3px;
+		}
+
+		&.is-round {
+			border-radius: 20px;
+		}
+
+	}
+}

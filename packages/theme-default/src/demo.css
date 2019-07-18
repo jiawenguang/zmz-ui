@@ -1,0 +1,531 @@
+@import "common/var.css";
+
+/*项目分割标注demo__*
+-------------------------------*/
+@b zmz-demo {
+  @m 1 {
+    @e left {
+      margin-top: 60px;
+      .zmz-article--breadcrumb{
+        margin-bottom: 20px;
+        font-size: 16px;
+        .zmz-breadcrumb__item{
+          .zmz-breadcrumb__text{
+              font-weight: normal;
+           }
+        }
+      }
+      .zmz-article--details {
+        box-shadow: 0 4px 30px 0 rgba(223, 225, 230, .5);
+        border: 1px solid #F4F5F9;
+        padding: 30px;
+        margin-bottom: 20px;
+
+        .zmz-article__header {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        .zmz-article__user--info {
+          margin-bottom: 20px;
+
+          span {
+            margin-right: 20px;
+
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .zmz-article__section {
+          margin-bottom: 20px;
+        }
+
+        .zmz-article__footer {
+          .zmz-article__footer__top {
+            margin-bottom: 40px;
+          }
+
+          .zmz-article__footer__bottom {
+            text-align: right;
+
+            .footer__bottom__1 {
+              display: inline-block;
+              margin-right: 20px;
+
+              span {
+                margin: 0 10px;
+              }
+            }
+
+            .footer__bottom__2 {
+              display: inline-block;
+
+              span {
+                padding: 5px 10px;
+                background: #87d8c2;
+                color: #fff;
+                border-radius: 6px;
+                margin: 0 10px;
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      .zmz-article--comment {
+        padding: 35px;
+        background: #fff;
+        box-shadow: 0 4px 30px 0 rgba(223, 225, 230, .5);
+
+        .quill-deitor__box {
+          margin-bottom: 20px;
+
+          .zmz-article__author {
+            margin-bottom: 20px;
+
+            span {
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              vertical-align: middle;
+              background: #87d8c2;
+              border-radius: 50%;
+              margin-right: 10px;
+            }
+
+            p {
+              display: inline-block;
+              height: 40px;
+              line-height: 40px;
+              font-size: 16px;
+              color: #868686;
+            }
+          }
+
+          .zmz-article__post {
+            margin-top: 20px;
+            text-align: right;
+
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              background: #87d8c2;
+              padding: 6px 10px;
+              margin: 0 10px;
+              margin-right: 10px;
+              border-radius: 6px;
+              color: #fff;
+            }
+          }
+        }
+
+        .zmz-comment__box {
+          .zmz-comment__title {
+            letter-spacing: 2px;
+            font-size: 20px;
+            margin-bottom: 50px;
+          }
+        }
+
+        .zmz-comment__content {
+          .zmz-comment__li {
+            padding: 20px 0;
+
+            .comment-item--info {
+              position: relative;
+
+              >span {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #f4f5f9;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+              }
+
+              >p {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                color:#868686;
+                small {
+                  position: absolute;
+                  right: 0;
+                }
+              }
+            }
+
+            .comment-item--content {
+              padding-left: 55px;
+              line-height: 1.5;
+              font-size: 14px;
+              margin-bottom: 20px;
+              color: #444444;
+            }
+
+            .comment-item--toolbar {
+              padding-left: 55px;
+              line-height: 1.5;
+              font-size: 14px;
+              margin-bottom: 20px;
+            }
+
+            .zmz-comment__content {
+              margin-left: 55px;
+              border: 1px solid #f4f5f9;
+              padding: 15px;
+            }
+
+            .comment-item--quill {
+              border: 1px solid #f4f5f9;
+              padding: 15px;
+              margin-left: 55px;
+            }
+          }
+        }
+
+        .zmz-article__quill--deitor {
+          .ql-toolbar.ql-snow {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-color: #F4F5F9;
+
+            .ql-header,
+            .ql-size {
+              border-color: #F4F5F9;
+            }
+          }
+
+          .ql-container.ql-snow {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-color: #F4F5F9;
+          }
+        }
+      }
+    }
+
+    @e right {
+      margin-top: 60px;
+
+      .zmz-card {
+        margin-bottom: 20px;
+
+        .zmz-userinfo {
+          .zmz-info__author {
+            margin-bottom: 20px;
+
+            .zmz-info--img {
+              width: 56px;
+              height: 56px;
+              border-radius: 7px;
+              background: #C6E0FB;
+              display: inline-block;
+              vertical-align: middle;
+            }
+
+            .zmz-info--nickname {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 10px;
+
+              h3 {
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 5px;
+              }
+
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .zmz-info__tab {
+            ul {
+              li {
+                width: 32%;
+                display: inline-block;
+                vertical-align: middle;
+
+                span {
+                  display: block;
+                  text-align: center;
+                  font-size: 14px;
+                  margin-bottom: 10px;
+                }
+
+                p {
+                  text-align: center;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @e notice {
+      .zmz-alert {
+        padding: 15px;
+        box-shadow: 0 4px 30px 0 rgba(223, 225, 230, .5);
+      }
+
+      .zmz-alert-icon.is-big {
+        color: #F9B0B0;
+      }
+
+      .zmz-alert-title.is-bold {
+        color: #DCDCDC;
+      }
+
+      .zmz-alert-description {
+        color: #DCDCDC;
+      }
+    }
+  }
+  @m search {
+    box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
+    border: 1px solid #f4f5f9;
+    padding: 20px;
+    margin: 30px 0;
+    .zmz-search{
+      margin-bottom: 0;
+      box-shadow: initial;
+      display: block !important;
+    }
+    .zmz-section{
+      .zmz-media{
+        box-shadow: initial;
+        border: none;
+      }
+      &+.zmz-section {
+        .zmz-media{
+          border-top:1px solid #f4f5f9;
+        }
+      }
+    }
+    @e result {
+      padding: 20px 0;
+    }
+  }
+  @m release{
+    box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
+    border: 1px solid #f4f5f9;
+    padding: 20px;
+    margin: 30px 0;
+  }
+}
+
+
+/*默认网站自适应
+-------------------------------*/
+@b zmz-nav {
+  @e demo {
+    display: inline-block;
+    vertical-align: middle;
+    .nav-item {
+      height: 80px;
+      color: #6e8aaf;
+      float: left;
+      padding: 0 20px;
+      line-height: 80px;
+      letter-spacing: 2px;
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+
+      &:hover {
+        color: #4896ff;
+        background: #ffffff;
+
+        & a {
+          color: #4896ff;
+        }
+      }
+
+      a {
+        color: #6e8aaf;
+      }
+
+      &.is-active {
+        color: #4896ff;
+
+        a {
+          color: #4896ff;
+        }
+      }
+    }
+
+    .nav-item.is-disabled {
+      cursor: not-allowed;
+      color: #dcdcdc;
+      font-weight: 500;
+      font-size: 14px;
+
+      &:hover {
+        color: #dcdcdc;
+        background: #fff;
+      }
+    }
+
+    .nav-item.is-active:after {
+      content: "";
+      display: block;
+      overflow: hidden;
+      clear: both;
+      width: 100%;
+      height: 2px;
+      background: #4896ff;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  @e login {
+    display: inline-block;
+    vertical-align: middle;
+    span{
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    .zmz-login--face{
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      background: #F9B0B0;
+    }
+  }
+}
+
+@b zmz {
+  @e menu {
+    @m demo {
+      .zmz-submenu {
+        .submenu-title {
+          height: 60px;
+          line-height: 60px;
+        }
+
+        .submenu-content {
+          .zmz-menu-item {
+            height: 40px;
+            line-height: 40px;
+          }
+
+          .zmz-submenu {
+            .submenu-title {
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*--------------------*
+ * demo
+ *--------------------*/
+@b zmz-demo {
+  @m button {
+    margin: 20px 20px 20px 0;
+  }
+
+  @m nav {
+    display: none;
+  }
+
+  @m section {
+    background: #fff;
+    margin-top: 60px;
+    box-shadow: 0 4px 30px 0 rgba(223, 225, 230, .5);
+  }
+
+  @m left {
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  @m right {
+    padding: 15px;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  @b zmz {
+    @e demo {
+      @m left {
+        padding: 15px;
+        background-color: #fff;
+      }
+
+      @m right {
+        padding: 15px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .zmz-button.zmz-demo--button {
+    display: none;
+  }
+
+  .zmz-nav.zmz-demo--nav {
+    display: block;
+  }
+
+  @m left {
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  @m right {
+    padding: 15px;
+    background-color: #fff;
+  }
+}
+
+@media (min-width: 992px) {
+  .zmz-button.zmz-demo--button {
+    display: none;
+  }
+
+  .zmz-nav.zmz-demo--nav {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .zmz-button.zmz-demo--button {
+    display: none;
+  }
+
+  .zmz-nav.zmz-demo--nav {
+    display: block;
+  }
+
+  @m left {
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  @m right {
+    padding: 15px;
+    background-color: #fff;
+  }
+}

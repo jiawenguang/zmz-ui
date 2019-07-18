@@ -1,0 +1,39 @@
+@import "./common/var.css";
+
+@b zmz-showmore {
+  @e text {
+    font-size: 13px !important;
+    color: var(--color-black) !important;
+    display: inline-block;
+    @m link {
+      color: var(--color-primary);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @m href {
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+  }
+  @m block{
+    .zmz-showmore__text{
+      display: block;
+    }
+    .zmz-showmore__btn{
+      display: block;
+    }
+  }
+  @m line{
+    .zmz-showmore__text{
+      display: inline-block;
+    }
+    .zmz-showmore__btn{
+      display: inline-block;
+    }
+  }
+  @e btn{
+    font-size: 13px !important;
+    color: var(--color-confirm-fill) !important;
+    display: inline-block;
+  }
+}

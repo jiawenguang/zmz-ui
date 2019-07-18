@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+@b zmz-card {
+	border: 1px solid #f4f5f9;
+
+	@e header {
+		padding: 10px 20px;
+		border-bottom: #f4f5f9 1px solid;
+
+		.header-title {
+			font-size: 16px;
+		}
+
+		.header-button {
+			border: none;
+			float: right;
+			font-size: 12px;
+			margin-top: 3px;
+			color: var(--color-confirm-fill);
+			cursor: pointer;
+		}
+	}
+
+	@e body {
+		padding: 20px;
+
+		.card-item {
+			font-size: 14px;
+		}
+
+		.card-item+.card-item {
+			margin-top: 15px;
+		}
+	}
+
+	@m always {
+		box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
+	}
+
+	@m hover {
+		&:hover {
+			box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.5);
+		}
+	}
+
+	@m never {
+		box-shadow: none;
+	}
+}

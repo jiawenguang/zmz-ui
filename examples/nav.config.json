@@ -1,0 +1,375 @@
+[{
+  "views": [{
+    "path": "/",
+    "redirect": "/bug",
+    "name": "views",
+    "entrance": "views",
+    "meta": {
+      "title": "入口文件"
+    },
+    "hidden": true,
+    "children": [{
+        "path": "/bug",
+        "hidden": true,
+        "name": "home",
+        "meta": {
+          "title": "bug首页"
+        },
+        "template": "home",
+        "children": [{
+            "path": "/bug",
+            "name": "bug",
+            "entrance": "two",
+            "hidden": true,
+            "redirect": "/bug/index",
+            "meta": {
+              "title": "介绍"
+            },
+            "children": [{
+                "path": "/bug/index",
+                "name": "index",
+                "hidden": true,
+                "meta": {
+                  "title": "首页-4"
+                },
+                "template": "index"
+              },
+              {
+                "path": "/bug/details",
+                "name": "details",
+                "hidden": true,
+                "meta": {
+                  "title": "bug详情"
+                },
+                "template": "details"
+              }
+            ]
+          },
+          {
+            "path": "/demo/three",
+            "name": "three",
+            "hidden": true,
+            "meta": {
+              "title": "首页-3"
+            },
+            "template": "index-3"
+          }
+        ]
+      },
+      {
+        "path": "/bug/release",
+        "name": "release",
+        "hidden": true,
+        "meta": {
+          "title": "bug发布"
+        },
+        "template": "release"
+      },
+      {
+        "path": "/bug/search",
+        "hidden": true,
+        "name": "search",
+        "meta": {
+          "title": "搜索"
+        },
+        "template": "search"
+      }
+    ]
+  }, "views"]
+}, {
+  "docs": [{
+    "path": "/docs",
+    "redirect": "/docs",
+    "name": "docs",
+    "entrance": "docs",
+    "meta": {
+      "title": "入口文件"
+    },
+    "hidden": true,
+    "children": [{
+      "path": "/docs",
+      "hidden": true,
+      "name": "sy",
+      "meta": {
+        "title": "首页"
+      },
+      "template": "index",
+      "children": [{
+          "path": "/docs",
+          "name": "guide",
+          "hidden": true,
+          "meta": {
+            "title": "开发指南"
+          },
+          "redirect": "/docs/introduce",
+          "entrance": "two",
+          "children": [{
+              "path": "/docs/introduce",
+              "name": "introduce",
+              "hidden": true,
+              "meta": {
+                "title": "介绍"
+              },
+              "template": "introduce.md"
+            },
+            {
+              "path": "/docs/install",
+              "name": "install",
+              "hidden": true,
+              "meta": {
+                "title": "安装"
+              },
+              "template": "install.md"
+            },
+            {
+              "path": "/docs/start",
+              "name": "start",
+              "hidden": true,
+              "meta": {
+                "title": "快速开发"
+              },
+              "template": "start.md"
+            },
+            {
+              "path": "/docs/logs",
+              "name": "logs",
+              "hidden": true,
+              "meta": {
+                "title": "更新日志"
+              },
+              "template": "logs.md"
+            }
+          ]
+        },
+        {
+          "path": "/docs/component",
+          "name": "component",
+          "hidden": true,
+          "meta": {
+            "title": "组件"
+          },
+          "entrance": "two",
+          "children": [{
+              "path": "/docs/basicscomponent",
+              "name": "basicscomponent",
+              "hidden": true,
+              "meta": {
+                "title": "基础组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                  "path": "/docs/layout",
+                  "name": "layout",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Layout 布局"
+                  },
+                  "template": "layout.md"
+                },
+                {
+                  "path": "/docs/icon",
+                  "name": "icon",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Icon 图标"
+                  },
+                  "template": "icon.md"
+                },
+                {
+                  "path": "/docs/button",
+                  "name": "button",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Button 按钮"
+                  },
+                  "template": "button.md"
+                },
+                {
+                  "path": "/docs/tag",
+                  "name": "tag",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Tag 标签"
+                  },
+                  "template": "tag.md"
+                }
+              ]
+            },
+            {
+              "path": "/docs/viewcomponent",
+              "name": "viewcomponent",
+              "hidden": true,
+              "meta": {
+                "title": "视图组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                  "path": "/docs/showmore",
+                  "name": "showmore",
+                  "hidden": true,
+                  "meta": {
+                    "title": "showMore 显示更多"
+                  },
+                  "template": "show-more.md"
+                },
+                {
+                  "path": "/docs/metainfo",
+                  "name": "metainfo",
+                  "hidden": true,
+                  "meta": {
+                    "title": "MetaInfo 三要素管理"
+                  },
+                  "template": "meta-info.md"
+                },
+                {
+                  "path": "/docs/alert",
+                  "name": "alert",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Alert 警告"
+                  },
+                  "template": "alert.md"
+                },
+                {
+                  "path": "/docs/loadingbar",
+                  "name": "loadingbar",
+                  "hidden": true,
+                  "meta": {
+                    "title": "LoadingBar 加载进度条"
+                  },
+                  "template": "loading-bar.md"
+                },
+                {
+                  "path": "/docs/skeleton",
+                  "name": "skeleton",
+                  "hidden": true,
+                  "meta": {
+                    "title": "skeleton 骨架屏"
+                  },
+                  "template": "skeleton.md"
+                }
+              ]
+            },
+            {
+              "path": "/docs/navcomponent",
+              "name": "navcomponent",
+              "hidden": true,
+              "meta": {
+                "title": "导航菜单组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                  "path": "/docs/navmenu",
+                  "name": "navmenu",
+                  "hidden": true,
+                  "meta": {
+                    "title": "NavMenu 导航菜单"
+                  },
+                  "template": "navMenu.md"
+                },
+                {
+                  "path": "/docs/breadcrumb",
+                  "name": "breadcrumb",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Breadcrumb 面包屑"
+                  },
+                  "template": "breadcrumb.md"
+                }
+              ]
+            },
+            {
+              "path": "/docs/formcomponent",
+              "name": "formcomponent",
+              "hidden": true,
+              "meta": {
+                "title": "表单组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                  "path": "/docs/upload",
+                  "name": "upload",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Upload 图片上传"
+                  },
+                  "template": "upload.md"
+                },
+                {
+                  "path": "/docs/textarea",
+                  "name": "textarea",
+                  "hidden": true,
+                  "meta": {
+                    "title": "Textarea 文本域"
+                  },
+                  "template": "textarea.md"
+                }
+              ]
+            },
+            {
+              "path": "/docs/tagcomponent",
+              "name": "tagcomponent",
+              "hidden": true,
+              "meta": {
+                "title": "标签组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                "path": "/docs/inputTag",
+                "name": "inputTag",
+                "hidden": true,
+                "meta": {
+                  "title": "InputTag 标签"
+                },
+                "template": "input-tag.md"
+              }]
+            },
+            {
+              "path": "/docs/datacomponent",
+              "name": "datacomponent",
+              "hidden": true,
+              "meta": {
+                "title": "数据组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                "path": "/docs/pagination",
+                "name": "pagination",
+                "hidden": true,
+                "meta": {
+                  "title": "Pagination 分页"
+                },
+                "template": "pagination.md"
+              }]
+            },
+            {
+              "path": "/docs/otherscomponent",
+              "name": "otherscomponent",
+              "hidden": true,
+              "meta": {
+                "title": "其他组件",
+                "nolink": true
+              },
+              "entrance": "three",
+              "children": [{
+                "path": "/docs/card",
+                "name": "card",
+                "hidden": true,
+                "meta": {
+                  "title": "Card 卡片"
+                },
+                "template": "card.md"
+              }]
+            }
+          ]
+        }
+      ]
+    }]
+  }, "docs"]
+}]

@@ -1,0 +1,9 @@
+@import "./common/var.css";
+
+@component-namespace zmz {
+  @b row {
+    position: relative;
+    box-sizing: border-box;
+    @utils-clearfix;
+  }
+}

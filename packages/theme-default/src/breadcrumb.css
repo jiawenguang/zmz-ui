@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "./common/var.css";
+
+@b zmz-breadcrumb {
+    line-height: 1.2;
+    font-size: 14px;
+    @e item{
+      display: inline-block;
+      &:last-child{
+        .zmz-breadcrumb__text{
+          color: #6f7d90;
+        }
+        .zmz-breadcrumb__icon{
+          display: none;
+        }
+      }
+    }
+    @e text{
+      display: inline-block;
+      color: #999;
+      font-weight: 700;
+      a{
+        color: #999;
+      }
+    }
+    @e icon{
+      display: inline-block;
+      font-style:normal;
+      margin: 0 5px;
+      color: #bfbfbf;
+      font-weight: 700;
+    }
+}

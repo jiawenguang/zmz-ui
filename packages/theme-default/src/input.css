@@ -1,0 +1,275 @@
+@import "common/var.css";
+
+@b zmz-input {
+  overflow: hidden;
+
+  @e input {
+    cursor: pointer;
+    font-size: var(--color-input-textarea-select-fontsize);
+    display: block;
+    padding: 0 15px;
+    border: 1px solid var(--color-input-textarea-select-border);
+    border-radius: var(--color-input-textarea-select-radius);
+    outline: 0;
+    color: var(--color-input-textarea-select-color);
+    height: var(--color-input-textarea-select-height);
+    line-height: var(--color-input-textarea-select-height);
+    background-color: var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+
+    &.is-disabled {
+      background: var(--color-input-textarea-select-disabled-fill);
+      color: var(--color-input-textarea-select-disabled-color);
+      cursor: no-drop;
+      opacity: 0.5;
+      &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-input-textarea-select-other);
+      }
+    }
+
+    &.is-hover {
+      &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:hover {
+        border-color: var(--color-info-border);
+      }
+    }
+
+    &.is-focus {
+      &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-input-textarea-select-other);
+      }
+
+      &:focus {
+        border-color: var(--color-confirm-border);
+      }
+    }
+  }
+
+  @m clearbtn {
+    position: relative;
+
+    .zmz-input__input {
+      padding: 0 40px 0 10px;
+    }
+  }
+
+  @e clearbtn {
+    position: absolute;
+    background: var(--color-white);
+    z-index: 9;
+    top: 1px;
+    right: 1px;
+    width: 38px;
+    line-height: 38px;
+    height: 38px;
+    text-align: center;
+    cursor: pointer;
+
+    i {
+      color: var(--color-input-textarea-select-icon-color);
+      font-size: var(--color-input-textarea-select-icon-fontsize);
+    }
+  }
+}
+
+@b zmz-input-tag {
+  border: 1px solid var(--color-input-textarea-select-border);
+  border-radius: var(--color-input-textarea-select-radius);
+
+  &:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    clear: both;
+  }
+
+  @m disabled {
+    background: var(--color-white);
+    opacity: 0.5;
+    cursor: no-drop;
+    border: 1px solid var(--color-input-textarea-select-disabled-color);
+
+    .zmz-input-tag__input {
+      cursor: no-drop;
+    }
+  }
+
+  @e box {
+    float: left;
+
+    &:after {
+      content: "";
+      display: block;
+      overflow: hidden;
+      clear: both;
+    }
+  }
+
+  @e item {
+    float: left;
+    line-height: 30px;
+    background: var(--color-input-textarea-select-disabled-color);
+    margin: 5px;
+    border-radius: var(--color-input-textarea-select-radius);
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      overflow: hidden;
+      clear: both;
+    }
+
+    i {
+      color: var(--color-input-textarea-select-icon-color);
+      font-size: var(--color-input-textarea-select-icon-fontsize);
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      margin-top: -15px;
+    }
+
+    span {
+      padding: 0 50px 0 10px;
+      display: inline-block;
+      color: var(--color-input-textarea-select-color);
+    }
+  }
+
+  @e input {
+    float: left;
+    cursor: pointer;
+    font-size: var(--color-input-textarea-select-fontsize);
+    display: block;
+    padding: 0 15px;
+    border-radius: var(--color-input-textarea-select-radius);
+    outline: 0;
+    border: none;
+    color: var(--color-input-textarea-select-color);
+    height: var(--color-input-textarea-select-height);
+    width: 100%;
+    line-height: var(--color-input-textarea-select-height);
+    background-color: var(--color-white);
+    box-sizing: border-box;
+  }
+}
+
+@b zmz-textarea {
+  position: relative;
+  border: 1px solid var(--color-input-textarea-select-border);
+  border-radius: var(--color-input-textarea-select-radius);
+
+  @e textarea {
+    padding: 5px 7px;
+    border: none;
+    display: block;
+    resize: vertical;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: var(--color-input-textarea-select-fontsize);
+    color: var(--color-input-textarea-select-color);
+    outline: none;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+
+    &:focus {
+      border-color: var(--color-input-textarea-select-focus);
+    }
+
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: var(--color-input-textarea-select-other);
+    }
+
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: var(--color-input-textarea-select-other);
+    }
+
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: var(--color-input-textarea-select-other);
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: var(--color-input-textarea-select-other);
+    }
+
+    &:focus {
+      border-color: var(--color-confirm-border);
+    }
+  }
+
+  @e over {
+    border-color: var(--color-input-textarea-select-border)
+  }
+
+  @e count {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: var(--color-input-textarea-select-fontsize);
+    color: var(--color-input-textarea-select-other);
+  }
+
+  @e num {
+    color: var(--color-confirm);
+  }
+
+  @e num--over {
+    color: var(--color-danger);
+  }
+}

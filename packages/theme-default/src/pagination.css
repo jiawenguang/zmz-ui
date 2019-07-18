@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+@b zmz-pagination {
+	-moz-user-select: none;
+	/*火狐*/
+	-webkit-user-select: none;
+	/*webkit浏览器*/
+	-ms-user-select: none;
+	/*IE10*/
+	-khtml-user-select: none;
+	/*早期浏览器*/
+	user-select: none;
+
+	&.is-background {
+		.zmz-pages {
+			.pages-item {
+				background: #f7f7f7;
+				color: var(--color-info-fill);
+				&:hover{
+					color:var(--color-confirm-fill);
+				}
+				button {
+					background: var(--color-confirm-fill);
+					color: var(--color-confirm-color);
+				}
+
+				button[disabled=disabled] {
+					background: #f7f7f7;
+					color: #dedddd;
+				}
+
+				&.active {
+					background: var(--color-confirm-fill);
+					color: var(--color-confirm-color);
+					cursor: inherit;
+				}
+			}
+
+		}
+	}
+
+	.zmz-pages {
+		text-align: center;
+
+		.pages-item {
+			display: inline-block;
+			font-size: 16px;
+			min-width: 40px;
+			height: 40px;
+			line-height: 40px;
+			cursor: pointer;
+			text-align: center;
+			color: #3f536e;
+			margin: 0 5px;
+			border-radius: 4px;
+			&:hover{
+				color:var(--color-confirm-fill);
+			}
+			button {
+				cursor: no-drop;
+				border: 0;
+				height: 40px;
+				min-width: 40px;
+				line-height: 40px;
+				display: block;
+				background: none;
+				font-size: 14px;
+				border-radius: 4px;
+			}
+		}
+
+		.next-page,
+		.prev-page {
+			font-size: 14px;
+			color: #3f536e;
+		}
+
+		.active {
+			color: var(--color-confirm-fill);
+			cursor: inherit;
+		}
+	}
+
+	@e header {
+		padding: 10px 20px;
+		border-bottom: #f4f5f9 1px solid;
+
+		.header-title {
+			font-size: 16px;
+		}
+
+		.header-button {
+			border: none;
+			float: right;
+			font-size: 12px;
+			margin-top: 3px;
+			color: var(--color-confirm-fill);
+			cursor: pointer;
+		}
+	}
+
+	@e body {
+		padding: 20px;
+
+		.card-item {
+			font-size: 14px;
+		}
+
+		.card-item+.card-item {
+			margin-top: 15px;
+		}
+	}
+
+	@m always {
+		box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	@m hover {
+		&:hover {
+			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	@m never {
+		box-shadow: none;
+	}
+}

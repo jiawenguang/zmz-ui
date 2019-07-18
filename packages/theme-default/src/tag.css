@@ -1,0 +1,78 @@
+@import "common/var.css";
+
+@b zmz-tag {
+	display: inline-block;
+	padding: 1px 8px;
+	font-size: 0;
+	line-height: 1.5;
+	text-align: center;
+	white-space: nowrap;
+	border: 1px solid #dfdfdf;
+	border-radius: 4px;
+	outline: 0;
+	color: #3f536e;
+	background-color: #f7f7f7;
+
+	@e text {
+		font-size: 12px;
+		margin-right: 2px;
+	}
+
+	@m default {
+		color: var(--color-default-color);
+		border-color: var(--color-default-border);
+		background-color: var(--color-default-fill);
+	}
+  @m info {
+		color: var(--color-info-color);
+		border-color: var(--color-info-border);
+		background-color: var(--color-info-fill);
+	}
+	@m success {
+		background-color: var(--color-success-fill);
+		border-color: var(--color-success-border);
+		color: var(--color-success-color);
+
+		& .el-tag__close:hover {
+			background-color: var(--tag-success-color);
+			color: var(--color-white);
+		}
+	}
+
+	@m confirm {
+		background-color: var(--color-confirm-fill);
+		border-color: var(--color-confirm-border);
+		color: var(--color-confirm-color);
+
+		& .el-tag__close:hover {
+			background-color: var(--tag-confirm-color);
+			color: var(--color-white);
+		}
+	}
+
+	@m warning {
+		background-color: var(--color-warning-fill);
+		border-color: var(--color-warning-border);
+		color: var(--color-warning-color);
+
+		&.el-tag__close:hover {
+			background-color: var(--tag-warning-color);
+			color: var(--color-white);
+		}
+	}
+
+	@m error {
+		background-color: var(--color-error-fill);
+		border-color: var(--color-error-border);
+		color: var(--color-error-color);
+
+		& .el-tag__close:hover {
+			background-color: var(--tag-danger-color);
+			color: var(--color-white);
+		}
+	}
+
+	@e close {
+		font-size: 12px;
+	}
+}
