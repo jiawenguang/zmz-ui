@@ -17,7 +17,7 @@
 			float: right;
 			font-size: 12px;
 			margin-top: 3px;
-			color: var(--color-confirm-fill);
+			color: #f15c5c;
 			cursor: pointer;
 		}
 	}

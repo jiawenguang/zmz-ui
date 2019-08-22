@@ -32,46 +32,25 @@
 		background-color: var(--color-success-fill);
 		border-color: var(--color-success-border);
 		color: var(--color-success-color);
-
-		& .el-tag__close:hover {
-			background-color: var(--tag-success-color);
-			color: var(--color-white);
-		}
 	}
 
 	@m confirm {
 		background-color: var(--color-confirm-fill);
 		border-color: var(--color-confirm-border);
 		color: var(--color-confirm-color);
-
-		& .el-tag__close:hover {
-			background-color: var(--tag-confirm-color);
-			color: var(--color-white);
-		}
 	}
 
 	@m warning {
 		background-color: var(--color-warning-fill);
 		border-color: var(--color-warning-border);
 		color: var(--color-warning-color);
-
-		&.el-tag__close:hover {
-			background-color: var(--tag-warning-color);
-			color: var(--color-white);
-		}
 	}
 
 	@m error {
 		background-color: var(--color-error-fill);
 		border-color: var(--color-error-border);
 		color: var(--color-error-color);
-
-		& .el-tag__close:hover {
-			background-color: var(--tag-danger-color);
-			color: var(--color-white);
-		}
 	}
-
 	@e close {
 		font-size: 12px;
 	}

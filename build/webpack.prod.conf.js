@@ -10,7 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
-
+const Renderer = PrerenderSpaPlugin.PuppeteerRenderer
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : config.build.env
@@ -60,6 +60,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         : config.build.index,
       template: 'index.html',
       inject: true,
+      favicon: path.resolve(__dirname, '../examples/assets/public/img/favicon.ico'),
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -67,6 +68,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         // more options:
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
+      chunks: ['manifest', 'vendor', 'app'],
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
@@ -100,12 +102,40 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    new PrerenderSpaPlugin(
+    new PrerenderSpaPlugin({
       // Absolute path to compiled SPA
-      path.join(__dirname, '../dist'),
+      staticDir: path.join(__dirname, '../dist'),
       // List of routes to prerender
-      [ '/', '/bug', '/bug/search','/voter','/sponsor'],
-    )
+      //需要预渲染的路由信息
+      routes:['/'],
+      postProcess (renderedRoute) {
+        // console.log(renderedRoute.html)
+        // Ignore any redirects.
+        // renderedRoute.route = renderedRoute.originalPath
+        // Basic whitespace removal. (Don't use this in production.)
+        // renderedRoute.html = renderedRoute.html.split(/>[\s]+</gmi).join('><')
+        renderedRoute.html = renderedRoute.html.replace(/async/gmi,'defer')
+        // Remove /index.html from the output path if the dir name ends with a .html file extension.
+        // For example: /dist/dir/special.html/index.html -> /dist/dir/special.html
+        // if (renderedRoute.route.endsWith('.html')) {
+          // renderedRoute.outputPath = path.join(__dirname, '../dist', renderedRoute.route)
+        // }
+        // console.log(renderedRoute)
+        if (renderedRoute.route.endsWith('.html')) {
+          renderedRoute.outputPath = path.join(__dirname, '../dist', renderedRoute.route)
+        }
+        // console.log(renderedRoute)
+        return renderedRoute
+      },
+      // renderer: new Renderer({
+      //     inject: {
+      //       foo: 'bar'
+      //     },
+      //     headless: false,
+      //     // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上。
+      //     renderAfterDocumentEvent: 'render-event'
+      // })
+    })
   ]
 })
 

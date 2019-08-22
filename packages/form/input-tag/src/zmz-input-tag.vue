@@ -1,9 +1,9 @@
 <template>
   <div class="zmz-input-tag" ref="zmz-input-tag" :class="{'zmz-input-tag--disabled':disabled}">
     <div class="zmz-input-tag__box" ref="zmz-input-tag__box">
-      <div class="zmz-input-tag__item" v-for="(item,index) in tagsArray" v-if="tagsArray.length>0"><span>{{item.text}}</span><i class="zmz-icon-close-f" @click="disabled?'':deleteTag(index,item)"></i></div>
+      <div class="zmz-input-tag__item" v-for="(item,index) in tagsArray" v-if="tagsArray.length>0"><span>{{item.text}}</span><i class="zmz-icon--fill-close" @click="disabled?'':deleteTag(index,item)"></i></div>
     </div>
-    <input class="zmz-input-tag__input" @focus="handleFocus" ref="zmz-input-tag__input" :disabled='disabled' v-model="value" 
+    <input class="zmz-input-tag__input" @focus="handleFocus" ref="zmz-input-tag__input" :disabled='disabled' v-model="value"
       @blur="handleBlur" />
   </div>
 </template>
@@ -64,7 +64,7 @@ export default {
           this.$emit('addTag',this.oneArray)
         }
       }
-      
+
     },
     handleFocus() {
       this.$emit('inputFocus')
@@ -86,13 +86,13 @@ export default {
   },
   watch: {
     tagsArray(val) {
-      this.$nextTick(() => {   
+      this.$nextTick(() => {
        this.tagWidth();
       });
     },
   },
   created() {
-    
+
   },
   computed: {
   },

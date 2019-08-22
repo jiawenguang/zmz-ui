@@ -1,5 +1,256 @@
 @import "common/var.css";
-
+@b zmz-select {
+    position: relative;
+    @e input {
+      cursor: pointer;
+      font-size: var(--color-input-textarea-select-fontsize);
+      display: block;
+      border: 1px solid var(--color-input-textarea-select-border);
+      border-radius: var(--color-input-textarea-select-radius);
+      outline: 0;
+      color: var(--color-input-textarea-select-color);
+      background-color: var(--color-white);
+      width: 100%;
+      box-sizing: border-box;
+      @m input{
+        cursor: pointer;
+        font-size: var(--color-input-textarea-select-fontsize);
+        display: block;
+        border: none;
+        padding: 0 15px;
+        border-radius: var(--color-input-textarea-select-radius);
+        outline: 0;
+        color: var(--color-input-textarea-select-color);
+        height: var(--color-input-textarea-select-height);
+        line-height: var(--color-input-textarea-select-height);
+        background-color: var(--color-white);
+        width: 100%;
+        box-sizing: border-box;
+      }
+  }
+  @e option{
+    box-shadow: 0 10px 60px 0 rgba(29, 29, 31, 0.07);
+    cursor: pointer;
+    position: absolute;
+    font-size: var(--color-input-textarea-select-fontsize);
+    display: block;
+    padding:10px;
+    border: 1px solid #eaeff6;
+    border-radius: var(--color-input-textarea-select-radius);
+    outline: 0;
+    top:50px;
+    color: var(--color-input-textarea-select-color);
+    background-color: var(--color-white);
+    width: 100%;
+    box-sizing: border-box;
+    .zmz-option__group{
+      .zmz-option__lable{
+         span{
+           display: block;
+           font-size: 14px;
+           padding: 5px;
+           border-bottom:1px solid #f4f5f9;
+         }
+      }
+      .zmz-option__list{
+        .zmz-option__li{
+          padding:10px 5px;
+        }
+      }
+    }
+    .zmz-option__horn{
+       position: absolute;
+       top: -7px;
+       left: 30px;
+       display: inline-block;
+       border-left: 7px solid transparent;
+       border-bottom: 7px solid #eaeff6;
+       border-right: 7px solid transparent;
+        &:before{
+         position: absolute;
+         top: 1px;
+         left: 0;
+         margin-left: -7px;
+         content: "";
+         display: inline-block;
+         border-left: 7px solid transparent;
+         border-bottom: 7px solid #fff;
+         border-right: 7px solid transparent;
+       }
+    }
+  }
+}
+@b zmz-switch {
+   i{
+     width: 40px;
+     height: 20px;
+     display: inline-block;
+     border-radius: 20px;
+     background: #d6d6d6;
+     vertical-align: middle;
+     position: relative;
+     &:before {
+        content: "";
+        display: inline-block;
+        transition: all 0.3s;
+        width: 16px;
+        background: #fff;
+        height: 16px;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        position: absolute;
+     }
+   }
+   &.is-checked{
+     span{
+      color: #f15c5c ;
+     }
+     i{
+       background: #f15c5c;
+       border-color: #f15c5c;
+       position: relative;
+       &:before{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 2px;
+          left: 100%;
+          margin-left: -18px;
+          right: 2px;
+           width: 16px;
+           background: #fff;
+           height: 16px;
+       }
+     }
+   }
+   span{
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 14px;
+     color: #636363;
+   }
+   @e input {
+      width: 0;
+      height: 0;
+      opacity: 0;
+   }
+}
+@b zmz-checkbox {
+   i{
+     width: 14px;
+     height: 14px;
+     border: 1px solid #d6d6d6;
+     display: inline-block;
+     border-radius: 4px;
+     vertical-align: middle;
+     &:before{
+        content: "";
+        display: inline-block;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+     }
+   }
+   &.is-checked{
+     span{
+      color: #f15c5c ;
+     }
+     i{
+       background: #f15c5c;
+       border-color: #f15c5c;
+       position: relative;
+       &:before{
+          content: "";
+          display: inline-block;
+          transition: all 0.2s;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 4px;
+          height: 8px;
+          border-style: solid;
+          border-width: 0 3px 3px 0;
+          border-color: #fff;
+          transform: translate(-50%,-60%) rotate(45deg);
+       }
+     }
+   }
+   span{
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 14px;
+     color: #636363;
+   }
+   @e input {
+      width: 0;
+      height: 0;
+      opacity: 0;
+   }
+}
+@b zmz-radio {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+   i{
+     width: 14px;
+     height: 14px;
+     border: 1px solid #d6d6d6;
+     display: inline-block;
+     border-radius: 50%;
+     vertical-align: middle;
+     &:before{
+        content: "";
+        display: inline-block;
+        width: 0px;
+        height: 0px;
+        transition: all 1s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius:50%;
+        background: #fff;
+     }
+   }
+   span{
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 14px;
+     color: #636363;
+   }
+   @e input {
+      width: 0;
+      height: 0;
+      opacity: 0;
+   }
+   &.is-checked{
+     span{
+      color: #f15c5c ;
+     }
+     i{
+       background: #f15c5c;
+       border-color: #f15c5c;
+       position: relative;
+       &:before{
+          content: "";
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          transition: all 0.2s;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-radius:50%;
+          background: #fff;
+       }
+     }
+   }
+}
 @b zmz-input {
   overflow: hidden;
 
@@ -270,6 +521,6 @@
   }
 
   @e num--over {
-    color: var(--color-danger);
+    color: var(--color-error);
   }
 }

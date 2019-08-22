@@ -2,7 +2,7 @@
   <transition name="zmz-zoom-in-center">
     <div class="zmz-tag" :class="'zmz-tag--'+color">
       <span class="zmz-tag__text"><slot></slot></span>
-      <i class="zmz-icon-close zmz-tag__close" v-if="closable" @click="hiddenTag"></i>
+      <i class="zmz-icon--close zmz-tag--close" v-if="closable" @click="hiddenTag"></i>
     </div>
   </transition>
 </template>

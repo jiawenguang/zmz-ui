@@ -12,40 +12,48 @@
   @when center {
     justify-content: center;
   }
-  
+
   @m default {
-	  color: #000;
-		background:#fff;
-    border:1px solid #F4F5F9;
+    color: #000;
+    background: #fff;
+    border: 1px solid #F4F5F9;
   }
+
   @m success {
     color: var(--color-success-border);
-		background:var(--color-success-plain-disabled-fill);
+    background: var(--color-success-plain-disabled-fill);
   }
+
   @m warning {
     color: var(--color-warning);
-    background:var(--color-warning-plain-disabled-fill);
+    background: var(--color-warning-plain-disabled-fill);
   }
+
   @m confirm {
     color: var(--color-confirm);
-    background:var(--color-confirm-plain-disabled-fill);
+    background: var(--color-confirm-plain-disabled-fill);
   }
+
   @m error {
     color: var(--color-error);
-    background:var(--color-error-plain-disabled-fill);
+    background: var(--color-error-plain-disabled-fill);
   }
+
   @m info {
-    color: var(--color-error);
-    background:var(--color-error-plain-disabled-fill);
+    color: var(--color-info);
+    background: var(--color-info-plain-disabled-fill);
   }
+
   @e icon {
     font-size: var(--alert-icon-size);
     width: var(--alert-icon-size);
+
     @when big {
       font-size: var(--alert-icon-large-size);
       width: var(--alert-icon-large-size);
     }
   }
+
   @e content {
     padding: 0 8px;
   }
@@ -53,6 +61,7 @@
   @e title {
     font-size: var(--alert-title-font-size);
     line-height: 18px;
+
     @when bold {
       font-weight: bold;
     }
@@ -63,6 +72,7 @@
     color: var(--color-close);
     position: absolute 12px 15px * *;
     cursor: pointer;
+
     @when customed {
       font-style: normal;
       font-size: var(--alert-title-font-size);

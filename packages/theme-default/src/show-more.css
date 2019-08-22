@@ -5,15 +5,6 @@
     font-size: 13px !important;
     color: var(--color-black) !important;
     display: inline-block;
-    @m link {
-      color: var(--color-primary);
-      cursor: pointer;
-      text-decoration: none;
-    }
-    @m href {
-      color: var(--color-primary);
-      cursor: pointer;
-    }
   }
   @m block{
     .zmz-showmore__text{
@@ -33,7 +24,7 @@
   }
   @e btn{
     font-size: 13px !important;
-    color: var(--color-confirm-fill) !important;
+    color: var(--color-error-fill) !important;
     display: inline-block;
   }
 }

@@ -11,7 +11,7 @@
   -----------------------------------------------------------------*/
   --color-input-textarea-select-color:#808080;
   --color-input-textarea-select-fill:#e4e4e4;
-  --color-input-textarea-select-border:#e4e4e4;
+  --color-input-textarea-select-border:#eaeff6;
   --color-input-textarea-select-focus:#e4e4e4;
   --color-input-textarea-select-hover:#e4e4e4;
   --color-input-textarea-select-fontsize:14px;
@@ -28,11 +28,11 @@
   --color-default-hover-fill:#fff;
   --color-default-hover-color:#828282;
   --color-default-hover-border:#c3c3c3;
-  
+
   --color-default-active-fill:#f9f9f9;
   --color-default-active-color:#8e8e8e;
   --color-default-active-border:#dedede;
-  
+
   --color-default-disabled:#d6d6d6;
   /*--plain-- */
   --color-default-plain-fill:#cacaca;
@@ -40,34 +40,34 @@
   --color-default-plain-disabled-fill:#ffffff;
   --color-default-plain-disabled-color:#e6e6e6;
   --color-default-plain-disabled-border:#e6e6e6;
-  
+
   --color-success-fill:#2eca7b;
   --color-success-border:#2eca7b;
   --color-success-color:#f1f1f1;
-  
+
   --color-success-hover-fill:#4edc94;
   --color-success-hover-border:#4edc94;
   --color-success-hover-color:#fff;
-  
+
   --color-success-active-fill:#1cb366;
   --color-success-active-border:#1cb366;
   --color-success-active-color:#fff;
-  
-  
+
+
   --color-success-text:#a7a7a7;
   --color-success-disabled:#81e0b0;
     /*--plain-- */
   --color-success-plain-fill:#dcfded;
   --color-success-plain-text:#2eca7b;
-  
+
   --color-success-plain-disabled-fill:#f4fcf8;
   --color-success-plain-disabled-color:#88e2b4;
   --color-success-plain-disabled-border:#abf7d1;
-  
+
    --color-warning-fill:#d89358;
    --color-warning-border:#d89358;
    --color-warning-color:#f1f1f1;
-   
+
    --color-warning-hover-fill:#e4a56e;
    --color-warning-hover-border:#e4a56e;
    --color-warning-hover-color:#fff;
@@ -75,71 +75,71 @@
    --color-warning-active-fill:#ca8245;
    --color-warning-active-border:#ca8245;
    --color-warning-active-color:#fff;
-   
+
    --color-warning-text:#a7a7a7;
    --color-warning-disabled:#f1c39c;
    /*--plain-- */
    --color-warning-plain-fill:#dcfded;
    --color-warning-plain-text:#2eca7b;
-   
+
    --color-warning-plain-disabled-fill:#fdf9f6;
    --color-warning-plain-disabled-color:#fdcfa8;
-   --color-warning-plain-disabled-border:#fdcfa8; 
-   
+   --color-warning-plain-disabled-border:#fdcfa8;
+
     --color-error-fill:#f15c5c;
 	--color-error-color:#f1f1f1;
 	--color-error-border:#f15c5c;
-	
+
    --color-error-hover-fill:#f48282;
    --color-error-hover-color:#fff;
    --color-error-hover-border:#f48282;
-   
+
    --color-error-active-fill:#d85656;
    --color-error-active-color:#fff;
    --color-error-active-border:#d85656;
-   
-   
+
+
    --color-error-text:#a7a7a7;
    --color-error-disabled:#f1b5b5;
    /*--plain-- */
-   
+
    --color-error-plain-disabled-fill:#fef7f7;
    --color-error-plain-disabled-color:#f9b0b0;
-   --color-error-plain-disabled-border:#f7dede; 
-   
+   --color-error-plain-disabled-border:#f7dede;
+
    --color-confirm-fill:#53a2f3;
    --color-confirm-color:#f1f1f1;
    --color-confirm-border:#53a2f3;
-   
+
    --color-confirm-hover-fill:#6eacea;
    --color-confirm-hover-color:#fff;
    --color-confirm-hover-border:#6eacea;
-   
-   
+
+
    --color-confirm-active-fill:#3a8ee4;
    --color-confirm-active-color:#fff;
    --color-confirm-active-border:#3a8ee4;
-   
-   
+
+
    --color-confirm-text:#a7a7a7;
    /*--plain-- */
    --color-confirm-plain-disabled:#b3d7fd;
    --color-confirm-plain-disabled-fill:#f6fafe;
    --color-confirm-plain-disabled-color:#c6e0fb;
-   --color-confirm-plain-disabled-border:#c6e0fb; 
-   
+   --color-confirm-plain-disabled-border:#c6e0fb;
+
    --color-info-color:#fff;
    --color-info-fill:#a0a0a0;
    --color-info-border:#a0a0a0;
-   
+
    --color-info-hover-color:#fff;
    --color-info-hover-fill:#ababab;
    --color-info-hover-border:#ababab;
-   
+
    --color-info-active-color:#fff;
    --color-info-active-fill:#a0a0a0;
    --color-info-active-border:#a0a0a0;
-   
+
    --color-info-text:#a7a7a7;
    --color-info-disabled-fill:#f1f1f1;
    --color-info-disabled-color:#ccc;
@@ -149,29 +149,29 @@
    --color-info-plain-text:#2eca7b;
    --color-info-plain-disabled-fill:#fafafa;
    --color-info-plain-disabled-color:#d2d2d2;
-   --color-info-plain-disabled-border:#f1f1f1; 
+   --color-info-plain-disabled-border:#f1f1f1;
      /* Button
   -------------------------- */
 
-  
 
-  
+
+
   --button-color-info-fill: var(--color-info-fill);
   --button-color-info-border: var(--color-info-border);
   --button-color-info-color: var(--color-info-color);
-  
+
   --button-color-info-hover-fill: var(--color-info-hover-fill);
   --button-color-info-hover-border: var(--color-info-hover-border);
   --button-color-info-hover-color: var(--color-info-hover-color);
-  
+
   --button-color-info-active-fill: var(--color-info-active-fill);
   --button-color-info-active-border: var(--color-info-active-border);
   --button-color-info-active-color: var(--color-info-active-color);
-  
+
   --button-color-info-disabled-fill:var(--color-info-disabled-fill);
   --button-color-info-disabled-color:var(--color-info-disabled-color);
 
-  
+
   --button-color-info-text: #bbb;
   --button-color-info-hover-text: #b3b3b3;
   --button-color-info-active-text: #989797;
@@ -180,8 +180,8 @@
   --button-color-info-plain-disabled-fill:var(--color-info-plain-disabled-fill);
   --button-color-info-plain-disabled-color:var(--color-info-plain-disabled-color);
   --button-color-info-plain-disabled-border:var(--color-info-plain-disabled-border);
-  
-  
+
+
   --button-color-default-fill:var(--color-default-fill);
   --button-color-default-border:var(--color-default-border);
   --button-color-default-color:var(--color-default-color);
@@ -196,47 +196,47 @@
   --button-color-default-fill-plain-disabled-fill:var(--color-default-plain-disabled-fill);
   --button-color-default-fill-plain-disabled-color:var(--color-default-plain-disabled-color);
   --button-color-default-fill-plain-disabled-border:var(--color-default-plain-disabled-border);
-  
+
   --button-color-success-fill: var(--color-success-fill);
   --button-color-success-color: var(--color-success-color);
   --button-color-success-border: var(--color-success-border);
-  
+
   --button-color-success-hover-fill:var(--color-success-hover-fill);
   --button-color-success-hover-color:var(--color-success-hover-color);
   --button-color-success-hover-border:var(--color-success-hover-border);
-  
+
   --button-color-success-active-fill:var(--color-success-active-fill);
   --button-color-success-active-color:var(--color-success-active-color);
   --button-color-success-active-border:var(--color-success-active-border);
-  
+
   --button-color-success-disabled:var(--color-success-disabled);
   --button-color-success-plain-fill:var(--color-success-plain-fill);
   --button-color-success-plain-text:var(--color-success-plain-text);
-  
+
   --button-color-success-plain-disabled-fill:var(--color-success-plain-disabled-fill);
   --button-color-success-plain-disabled-color:var(--color-success-plain-disabled-color);
   --button-color-success-plain-disabled-border:var(--color-success-plain-disabled-border);
-  
+
   --button-color-warning-fill: var(--color-warning-fill);
   --button-color-warning-color: var(--color-warning-color);
   --button-color-warning-border: var(--color-warning-border);
-  
+
   --button-color-warning-hover-fill: var(--color-warning-hover-fill);
   --button-color-warning-hover-border: var(--color-warning-hover-border);
   --button-color-warning-hover-color: var(--color-warning-hover-color);
-  
+
   --button-color-warning-active-fill: var(--color-warning-active-fill);
   --button-color-warning-active-border: var(--color-warning-active-border);
   --button-color-warning-active-color: var(--color-warning-active-color);
-  
+
   --button-color-warning-disabled:var(--color-warning-disabled);
   --button-color-warning-plain-disabled-fill:var(--color-warning-plain-disabled-fill);
   --button-color-warning-plain-disabled-color:var(--color-warning-plain-disabled-color);
   --button-color-warning-plain-disabled-border:var(--color-warning-plain-disabled-border);
-   
-  
+
+
   --button-color-confirm:#fff;
-  
+
   --button-color-error-fill: var(--color-error-fill);
   --button-color-error-border: var(--color-error-border);
   --button-color-error-color: var(--color-error-color);
@@ -246,21 +246,21 @@
   --button-color-error-active-fill: var(--color-error-active-fill);
   --button-color-error-active-border: var(--color-error-active-border);
   --button-color-error-active-color: var(--color-error-active-color);
-  
-  
+
+
   --button-color-error-disabled:var(--color-error-disabled);
   --button-color-error-plain-disabled-fill:var(--color-error-plain-disabled-fill);
   --button-color-error-plain-disabled-color:var(--color-error-plain-disabled-color);
   --button-color-error-plain-disabled-border:var(--color-error-plain-disabled-border);
-  
+
   --button-color-confirm-fill:var(--color-confirm-fill);
   --button-color-confirm-border:var(--color-confirm-border);
   --button-color-confirm-color:var(--color-confirm-color);
-  
+
   --button-color-confirm-hover-fill: var(--color-confirm-hover-fill);
   --button-color-confirm-hover-color: var(--color-confirm-hover-color);
   --button-color-confirm-hover-border: var(--color-confirm-hover-border);
-  
+
   --button-color-confirm-active-fill: var(--color-confirm-active-fill);
   --button-color-confirm-active-color: var(--color-confirm-active-color);
   --button-color-confirm-active-border: var(--color-confirm-active-border);
@@ -289,7 +289,7 @@
   --tab-vertical-header-width: 90px;
   --tab-vertical-header-count-color: var(--color-white);
   --tab-vertical-header-count-fill: var(--color-secondary);
-  
+
   /* Tag
   -------------------------- */
   --tag-padding: 0 5px;
@@ -320,16 +320,16 @@
   --tag-danger-color: var(--button-color-error);
 
 
-  
- --color-close: #b4bccc;  
+
+  --color-close: #b4bccc;
   --color-active: #f1f1f1;
   --color-white: #fff;
   --color-success: #2eca7b;
   --color-warning: #d89358;
   --color-error: #d85858;
   --color-confirm: #53a2f3;
+  --color-info: #a0a0a0;
 
-  
   --color-secondary: color(var(--button-color-default-fill) s(99%) l(*0.9));
   --color-dark-white: color(var(--color-white) blend(var(--button-color-default-fill) 2%));
   --color-black: #000;
@@ -633,7 +633,7 @@
   --group-title-width: 66px;
 
 
- 
+
 
   /* cascader
   -------------------------- */

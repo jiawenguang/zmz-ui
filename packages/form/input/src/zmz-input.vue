@@ -1,5 +1,5 @@
 <template>
-  <div class="zmz-input" :class="{ 'zmz-input--clearbtn': clearbtn, 'zmz-input--showPassword': showPassword }" :data-title="showClear" 
+  <div class="zmz-input" :class="{ 'zmz-input--clearbtn': clearbtn, 'zmz-input--showPassword': showPassword }" :data-title="showClear"
     @mouseenter="hovering = true"
     @mouseleave="hovering = false">
     <input
@@ -18,7 +18,7 @@
       :value="value"
       ref="input"
     />
-    <span class="zmz-input__clearbtn" v-show="showClear" @click="clearInput"><i class="zmz-icon-close-f"></i></span>
+    <span class="zmz-input__clearbtn" v-show="showClear" @click="clearInput"><i class="zmz-icon--error"></i></span>
     <span :class="{ 'zmz-input__showPassword': isShowPassword, 'zmz-input__hidePassword': !isShowPassword }" v-if="isShowPassword" @click="ShowPassword"></span>
   </div>
 </template>
@@ -98,11 +98,11 @@ export default {
     },
     handleInput(event) {
       if (this.isComposing) return;
-      
+
       // hack for https://github.com/ElemeFE/element/issues/8548
       // should remove the following line when we don't support IE
       if (event.target.value === this.nativeInputValue) return;
-      
+
       this.$emit('input', event.target.value);
       this.$nextTick(this.setNativeInputValue);
     },
@@ -138,7 +138,7 @@ export default {
       }
       const minRows = autosize.minRows;
       const maxRows = autosize.maxRows;
-    
+
       this.textareaCalcStyle = calcTextareaHeight(this.$refs.textarea, minRows, maxRows);
     },
   },

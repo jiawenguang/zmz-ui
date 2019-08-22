@@ -14,7 +14,7 @@
            v-if="description">{{description}}</p>
         <i v-if="closable"
            class="zmz-alert__closebtn"
-           :class="[ closeText ? 'is-customed' : 'zmz-icon-close']"
+           :class="[ closeText ? 'is-customed' : 'zmz-icon--close']"
            @click="close">{{closeText}}</i>
       </div>
     </div>

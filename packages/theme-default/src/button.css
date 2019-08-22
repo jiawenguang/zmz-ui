@@ -152,8 +152,8 @@
 			}
 
 			&.is-active:active {
-				background: var(--button-color-success-active);
-				border-color: var(--button-color-success-active);
+				background: var(--button-color-success-active-fill);
+				border-color: var(--button-color-success-active-border);
 				color: var(--color-white);
 			}
 

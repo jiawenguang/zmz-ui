@@ -1,8 +1,8 @@
 export default {
     name: 'ZmzRow',
-  
+
     componentName: 'ZmzRow',
-  
+
     props: {
       tag: {
         type: String,
@@ -19,20 +19,20 @@ export default {
         default: 'top'
       }
     },
-  
+
     computed: {
       style() {
         var ret = {};
-  
+
         if (this.gutter) {
-          ret.marginLeft = `-${this.gutter / 2}px`;
-          ret.marginRight = ret.marginLeft;
+          // ret.marginLeft = `-${this.gutter / 2}px`;
+          // ret.marginRight = ret.marginLeft;
         }
-  
+
         return ret;
       }
     },
-  
+
     render(h) {
       return h(this.tag, {
         class: [
@@ -45,4 +45,3 @@ export default {
       }, this.$slots.default);
     }
   };
-  

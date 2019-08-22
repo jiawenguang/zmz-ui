@@ -1,5 +1,6 @@
 'use strict'
 const utils = require('./utils')
+const path = require('path')
 const webpack = require('webpack')
 const config = require('../config')
 const merge = require('webpack-merge')
@@ -30,7 +31,8 @@ module.exports = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      inject: true
+      inject: true,
+      favicon: path.resolve(__dirname, '../examples/assets/public/img/favicon.ico')
     }),
     new FriendlyErrorsPlugin()
   ]

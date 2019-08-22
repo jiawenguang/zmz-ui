@@ -17,14 +17,14 @@ const vueMarkdown = {
 		MarkdownIt.use(require("markdown-it-table-of-contents"),{
       includeLevel: [2, 3]
     });
-		
+
     MarkdownIt.renderer.rules.fence = utils.wrapCustomClass(MarkdownIt.renderer.rules.fence)
 
     // ```html `` 给这种样式加个class hljs
     //  但是markdown-it 有个bug fence整合attr的时候直接加载class数组上而不是class的值上
     //  markdown-it\lib\renderer.js 71行 这么修改可以修复bug
     //  tmpAttrs[i] += ' ' + options.langPrefix + langName; --> tmpAttrs[i][1] += ' ' + options.langPrefix + langName;
-    // const fence = MarkdownIt.renderer.rules.fence 
+    // const fence = MarkdownIt.renderer.rules.fence
     // MarkdownIt.renderer.rules.fence = function(...args){
     //   args[0][args[1]].attrJoin('class', 'hljs')
     //   var a = fence(...args)
@@ -60,7 +60,7 @@ const vueMarkdown = {
       }
     }]
   ]
-  
+
 }
 
 function resolve (dir) {
@@ -74,6 +74,7 @@ module.exports = {
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
+    chunkFilename:'js/[name].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -107,7 +108,7 @@ module.exports = {
         include: [resolve('examples'), resolve('test'), resolve('packages')]
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
@@ -123,7 +124,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        test: /\.(woff2?|woff|svg|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,

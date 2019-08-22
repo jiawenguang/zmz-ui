@@ -5,8 +5,6 @@
  * Email:1028470211@qq.com
  */
 import ZmzUiButton from './button/index.js';
-import WRow from './row/index'
-import WCol from './col/index'
 import ZmzTag from './tag/index'
 import ZmzUiShowMore from './show-more/index'
 import MetaInfo from './meta-info/index'
@@ -41,10 +39,22 @@ import ZmzUiFormLabel from './form/label/index.js'
 import ZmzUiFormTextarea from './form/textarea/index'
 import ZmzUiFormInputTag from './form/input-tag/index'
 import ZmzUiFormattime from './formattime/index'
+import ZmzUiFormSelect from './form/select/index'
+import ZmzUiFormSelectOption from './form/select/index-option'
+import ZmzUiFormSelectOptionGroup from './form/select/index-option-group'
+import ZmzUiLazyload from './lazyload/index'
+import ZmzUiDatePicker from './calendar/index'
+import ZmzUiRadio from './form/input-radio/index'
+import ZmzUiCheckbox from './form/input-checkbox/index'
+import ZmzUiSwitch from './form/input-switch/index'
+import ZmzUiTree from './tree/index'
+import ZmzUiTable from './table/index'
+import ZmzUiProgress from './progress/index'
+import ZmzUiDropdown from './dropdown/index'
+import ZmzUiDropdownItem from './dropdown/index-item'
+
 const components = [
   ZmzUiButton,
-  WRow,
-  WCol,
   ZmzTag,
   ZmzUiShowMore,
   Skeleton,
@@ -76,7 +86,20 @@ const components = [
   ZmzUiFormLabel,
   ZmzUiFormTextarea,
   ZmzUiFormInputTag,
-  ZmzUiFormattime
+  ZmzUiFormattime,
+  ZmzUiFormSelect,
+  ZmzUiFormSelectOption,
+  ZmzUiFormSelectOptionGroup,
+  ZmzUiLazyload,
+  ZmzUiDatePicker,
+  ZmzUiRadio,
+  ZmzUiCheckbox,
+  ZmzUiSwitch,
+  ZmzUiTree,
+  ZmzUiTable,
+  ZmzUiProgress,
+  ZmzUiDropdown,
+  ZmzUiDropdownItem
 ]
 
 const install = function(Vue, opts = {}) {
@@ -87,11 +110,10 @@ const install = function(Vue, opts = {}) {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   };
+  ZmzUiLazyload.install(Vue, opts)
   Vue.prototype.$loading = ZmzUiLoadingBar
   Vue.prototype.$message = ZmzUiMessage
-
 }
-
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
@@ -99,8 +121,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   ZmzUiButton,
-  WRow,
-  WCol,
   ZmzTag,
   ZmzUiShowMore,
   MetaInfo,
@@ -134,5 +154,18 @@ export default {
   ZmzUiFormLabel,
   ZmzUiFormTextarea,
   ZmzUiFormInputTag,
-  ZmzUiFormattime
+  ZmzUiFormattime,
+  ZmzUiFormSelect,
+  ZmzUiFormSelectOption,
+  ZmzUiFormSelectOptionGroup,
+  ZmzUiLazyload,
+  ZmzUiDatePicker,
+  ZmzUiRadio,
+  ZmzUiCheckbox,
+  ZmzUiSwitch,
+  ZmzUiTree,
+  ZmzUiTable,
+  ZmzUiProgress,
+  ZmzUiDropdown,
+  ZmzUiDropdownItem
 }

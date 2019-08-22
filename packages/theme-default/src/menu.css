@@ -168,7 +168,7 @@
 		margin: 0;
 		padding-left: 0;
 		background-color: #fff;
-
+    border-bottom: 0;
 		.zmz-menu-item {
 			position: relative;
 			color: #6e8aaf;

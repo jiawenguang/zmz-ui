@@ -1,14 +1,14 @@
 {
-  "name": "vv-ui-theme-default",
+  "name": "zmz-ui-theme-default",
   "version": "1.0.0",
-  "description": "vv-ui component default theme.",
+  "description": "zmz-ui component default theme.",
   "main": "lib/index.css",
   "scripts": {
     "dev": "gulp build && gulp watch",
     "build": "gulp build"
   },
   "keywords": [
-    "vv-ui",
+    "zmz-ui",
     "theme"
   ],
   "author": "monkeywang",

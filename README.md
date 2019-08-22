@@ -1,27 +1,21 @@
 <p align="center">
-  <a href="https://at.aotu.io/">
-    <img width="200" src="https://github.com/VV-UI/VV-UI/blob/master/examples/assets/img/logo.png">
+  <a href="http://ui.zhuimengzhu.com">
+    <img width="200" src="http://ui.zhuimengzhu.com/static/img/banner.825723a.png">
   </a>
 </p>
 
 # 公告
-这个 `UI`库的核心想法是想教大家如何搭建一个基于`Vue`的组件库。市面上已经有很多成熟的中后台组件库，比如`element-ui`和`iview`。
+``ZMZ-UI``项目开源，吸收各类的ui组件结合而成，供大家学习！
 
 # ZMZ UI
 
-`Zmz-Ui` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
-[演示地址](https://zmz-ui.github.io/jiawenguang/zmz-ui)
+`ZMZ-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发
+[演示地址](http://ui.zhuimengzhu.com)
 
-<p align="center">
-  <a href="https://github.com/feross/standard">
-    <img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="Standard - JavaScript Style">
-  </a>
-</p>
-<p align="center">
-<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-1.0.4-brightgreen.svg" alt="npm version"></a>
-  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
-  <a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/licence-MIT-blue.svg"></a>
-</p>
+# Logs 更新日志
+### [ v0.1.1 ] 2019-8-22
+* 1.新增 ``Lazyload`` ``Radio`` ``Checkbox`` ``Switch`` ``Dropdown`` ``Progress`` ``Tree`` ``Table`` 组件基本用法
+* 2.修复若干bug
 
 ## 特性
 
@@ -52,15 +46,15 @@ npm install zmz-ui --save
 ## 使用
 
 ```js
-import ZmzUi from 'zmz-ui' // 引入组件库
+import ZMZUI from 'zmz-ui' // 引入组件库
 import 'zmz-ui/packages/theme-default/lib/index.css' // 引入样式库
 
-Vue.use(ZmzUi)
+Vue.use(ZMZUI)
 ```
 
 ## 贡献
 
-如果你在使用 `Zmz-Ui` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/jiawenguang/zmz-ui) 或 [Pull Request](https://github.com/jiawenguang/zmz-ui)
+如果你在使用 `ZMZ-UI` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/jiawenguang/zmz-ui) 或 [Pull Request](https://github.com/jiawenguang/zmz-ui)
 
 
 ## Pull requests 规范
