@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://ui.zhuimengzhu.com">
-    <img width="200" src="http://ui.zhuimengzhu.com/static/img/banner.825723a.png">
+    <img width="100" src="http://ui.zhuimengzhu.com/static/img/banner.825723a.png">
   </a>
 </p>
 
